@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>お問い合わせ | アバレホールディングス</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-title">
+        <a href="index.html" style="color: inherit; text-decoration: none;">ABARE HD</a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="about.html">従業員</a></li>
+          <li><a href="business.html">生業（事業）</a></li>
+          <li><a href="contact.html">申し立て</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding: 4rem 2rem; text-align: center;">
+    <h1>申し立て</h1>
+    <p>我々に意見する者、以下フォームに寄こしなさい。</p>
+
+    <form id="contactForm" class="form" action="#" method="post">
+    <table class="contactTable">
+        <tr>
+          <th>お名前</th>
+          <td><input type="text" name="name" required
+          placeholder="貴様ノ名 記憶下蔵"></td>
+        </tr>
+        <tr>
+          <th>物申し内容</th>
+          <td><textarea name="comment" rows="5" cols="40" required></textarea></td>
+        </tr>
+        <tr>
+          <th>mail</th>
+          <td><input type="email" name="email" required
+          placeholder="sample@gmail.com"></td>
+        </tr>
+    </table>
+    <div>
+      <input type="reset" value="取り消す">
+      <input type="submit" value="送り付ける">
+    </div>
+</form>
+
+ <div class="back-to-top">
+  <a href="index.html">やっぱり止めて、トップへ戻る</a>
+</div>
+ </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 アバレホールディングス</p>
+  </footer>
+
+</body>
+</html>

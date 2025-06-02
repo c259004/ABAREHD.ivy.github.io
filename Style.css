@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: "Yuji Boku",serif;
+  font-weight: 300;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ヘッダー */
+.site-header {
+  background-color: #b5a27a;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid  #c9be9f;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+.main-nav a:link,
+.main-nav a:visited {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+  color: #a40000;
+}
+
+.main-nav li {
+  display: inline;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.main-nav li + li::before {
+  content: "|";
+  color: #000;
+  margin-right: 10px;
+}
+
+
+/* メインビジュアル */
+.main-visual {
+  position: relative;
+  background-image: url("青空.png");
+  font-family: 'Yuji Boku',serif;
+  font-size: 5rem;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.cat1-img{
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+  z-index: 1;
+}
+.cat2-img{
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  width: 150px;
+  height: auto;
+  z-index: 1;
+}
+.main-visual h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+}
+.main-visual-inner h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+
+.main-visual p {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* 事業紹介セクション */
+.business-section {
+  padding: 4rem 2rem;
+  background-color: #e3d6b8;
+  text-align: center;
+}
+
+.business-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.business-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background-color: #a40000;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.staff-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.staff-cards .card {
+  background-color: #fffaf1;
+  border: 1px solid #ccc5b9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+
+/* フッター */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+/* フォームテーブル */
+.contactTable input[type="text"],
+.contactTable input[type="email"],
+.contactTable textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.3px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  font-size: 1em;
+  background-color: #fff;
+}
+.contactTable input[type="text"]:focus,
+.contactTable input[type="email"]:focus,
+.contactTable textarea:focus {
+  outline: 2px solid #999;
+}
+
+.form {
+  width: fit-content;
+  margin: 2rem auto;
+}
+  
+.contactTable {
+  width: fit-content;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  border: 2px solid #999;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+th {
+  width: 8em;
+  background-color: #c9be9f;
+  border: 1px solid #999;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+ td {
+ width: 24em;
+  border: 1px solid #999;
+  border-left: none;
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+}
+
+.contactTable caption {
+  margin-bottom: 10px;
+}
+
+
+
